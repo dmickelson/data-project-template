@@ -22,7 +22,7 @@ license = {file = "LICENSE"}
 requires-python = ">=3.7"
 # Project authors
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "David Mickelson", email = "davidpmickelson@gmail.com"},
 ]
 # Project maintainers (if different from authors)
 maintainers = [
@@ -44,8 +44,8 @@ classifiers = [
 # Dependencies
 # List your project's dependencies here
 dependencies = [
-    "requests>=2.25.1",
-    "numpy>=1.20.0",
+    "pydantic_settings>=2.0.0",  # Added pydantic_settings
+    "pytest>=6.2.5",  # Added pytest to main dependencies
     # Add more dependencies as needed
 ]
 
@@ -54,7 +54,6 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=6.2.5",
-    "black>=21.12b0",
     "flake8>=4.0.1",
     # Add more development dependencies as needed
 ]
@@ -79,24 +78,6 @@ packages = ["your_package"]
 # Configuration for setuptools_scm (automatic versioning)
 write_to = "your_package/_version.py"
 
-[tool.black]
-# Configuration for Black code formatter
-line-length = 88
-target-version = ['py37']
-include = '\.pyi?$'
-extend-exclude = '''
-/(
-  # directories
-  \.eggs
-  | \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | build
-  | dist
-)/
-'''
 
 [tool.isort]
 # Configuration for isort import sorter
