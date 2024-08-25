@@ -46,6 +46,7 @@ classifiers = [
 dependencies = [
     "pydantic_settings>=2.0.0",  # Added pydantic_settings
     "pytest>=6.2.5",  # Added pytest to main dependencies
+    "python-dotenv>=0.19.0",  # Added python-dotenv
     # Add more dependencies as needed
 ]
 
@@ -54,6 +55,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=6.2.5",
+    "black>=21.12b0"
     "flake8>=4.0.1",
     # Add more development dependencies as needed
 ]
@@ -78,6 +80,14 @@ packages = ["your_package"]
 # Configuration for setuptools_scm (automatic versioning)
 write_to = "your_package/_version.py"
 
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
+max-complexity = 10
+exclude = [
+    "venv",
+    "test/data/"
+]
 
 [tool.isort]
 # Configuration for isort import sorter
