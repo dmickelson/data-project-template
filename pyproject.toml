@@ -66,10 +66,10 @@ your-cli-command = "your_package.module:function"
 
 # URLs associated with the project
 [project.urls]
-Homepage = "https://github.com/yourusername/your-project"
+Homepage = "https://github.com/dmickelson/your-project"
 Documentation = "https://your-project.readthedocs.io"
-Repository = "https://github.com/yourusername/your-project.git"
-"Bug Tracker" = "https://github.com/yourusername/your-project/issues"
+Repository = "https://github.com/dmickelson/your-project.git"
+"Bug Tracker" = "https://github.com/dmickelson/your-project/issues"
 
 # Tool configurations
 [tool.setuptools]
