@@ -45,6 +45,7 @@ classifiers = [
 # List your project's dependencies here
 dependencies = [
     "pydantic_settings>=2.0.0",  # Added pydantic_settings
+    "ipykernel>=*",
     "pytest>=6.2.5",  # Added pytest to main dependencies
     "python-dotenv>=0.19.0",  # Added python-dotenv
     # Add more dependencies as needed
